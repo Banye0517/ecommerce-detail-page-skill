@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>婴幼儿核桃牛乳炭烧棒 · 电商详情页策划方案</title>
+<style>
+  :root{
+    --brand:#A9744F; --brand-dark:#6E462C; --amber:#E0A03A;
+    --cream:#FBF8F2; --milk:#F2EDE4; --green:#9CC49B; --green-dark:#4F7A4E;
+    --ink:#2B2B2B; --muted:#6B7280; --line:#E7E0D6;
+    --warn:#C0392B; --warn-bg:#FCEEEC; --ok:#2E7D5B;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:#fff;line-height:1.7;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:880px;margin:0 auto;padding:32px 24px 64px}
+  header.hero{background:linear-gradient(135deg,var(--brand-dark),var(--brand));color:#fff;border-radius:16px;padding:34px 32px;margin-bottom:24px}
+  header.hero .tag{display:inline-block;background:rgba(255,255,255,.16);padding:4px 12px;border-radius:20px;font-size:13px;margin-bottom:14px}
+  header.hero h1{font-size:30px;font-weight:800;letter-spacing:1px}
+  header.hero .sub{margin-top:10px;opacity:.92;font-size:15px}
+  .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+  .meta span{background:rgba(255,255,255,.12);padding:6px 14px;border-radius:8px;font-size:13px}
+  .alert{background:#FFF8E6;border:1px solid #F0DCA8;border-left:5px solid var(--amber);border-radius:10px;padding:16px 18px;margin-bottom:24px;font-size:14px}
+  .alert h3{color:#8A6212;font-size:16px;margin-bottom:8px}
+  .alert ul{margin-left:18px}
+  .alert li{margin:5px 0}
+  section{margin-bottom:34px}
+  h2{font-size:22px;color:var(--brand-dark);border-left:5px solid var(--amber);padding-left:12px;margin-bottom:16px}
+  h3{font-size:17px;color:var(--brand);margin:18px 0 10px}
+  p{margin:8px 0;color:#3a3a3a}
+  .note{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14px;color:#555}
+  .note b{color:var(--brand-dark)}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px}
+  th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}
+  th{background:var(--milk);color:var(--brand-dark);font-weight:700}
+  tr:nth-child(even) td{background:#FDFCFA}
+  a{color:var(--brand);word-break:break-all}
+  .screen{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin:16px 0;box-shadow:0 2px 10px rgba(110,70,44,.06)}
+  .screen .no{display:inline-block;background:var(--brand);color:#fff;font-size:13px;font-weight:700;padding:3px 11px;border-radius:20px;margin-bottom:8px}
+  .screen.key .no{background:var(--green-dark)}
+  .screen h4{font-size:18px;color:var(--brand-dark);margin:6px 0 12px}
+  .copy-line{display:flex;gap:10px;align-items:baseline;margin:6px 0;flex-wrap:wrap}
+  .copy-main{font-size:20px;font-weight:800;color:var(--brand-dark)}
+  .copy-sub{font-size:15px;color:var(--amber);font-weight:700}
+  .copy-tag{font-size:12px;color:var(--muted);background:var(--cream);padding:2px 9px;border-radius:6px}
+  .field{margin:10px 0}
+  .field .lab{font-weight:700;color:var(--brand);font-size:14px;display:block;margin-bottom:3px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr}}
+  .warn-box{background:var(--warn-bg);border:1px solid #F0C4BE;border-radius:12px;padding:16px 18px}
+  .warn-box h3{color:var(--warn);margin-top:0}
+  .warn-box li{margin:8px 0 8px 18px;font-size:14px}
+  .palette{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+  .sw{width:74px;height:74px;border-radius:10px;display:flex;align-items:flex-end;justify-content:center;font-size:11px;color:#fff;padding:6px;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,.35)}
+  .footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);text-align:center}
+  code{background:var(--cream);padding:1px 6px;border-radius:5px;font-size:12.5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <span class="tag">电商详情页策划 Skill · 品类：婴幼儿辅食（GB 10769 其他婴幼儿谷物辅助食品）</span>
+  <h1>婴幼儿核桃牛乳炭烧棒 · 详情页策划方案</h1>
+  <div class="sub">竞品分析（真实数据）+ FBE 卖点转换 + 弹性 11 屏策划 + 视觉方向 + 广告法合规</div>
+  <div class="meta">
+    <span>品类路由：`infant-food.md`</span>
+    <span>对标竞品：5 个（京东真实数据）</span>
+    <span>策划屏数：11 屏</span>
+    <span>策划日期：2026-09-14</span>
+  </div>
+</header>
+
+<div class="alert">
+  <h3>⚠ 动笔前必须先确认的三件事（本方案的假设前提）</h3>
+  <ul>
+    <li><b>① 包装上的执行标准号。</b>本方案<b>假设</b>产品执行 <code>GB 10769</code>（婴幼儿谷类辅助食品），归入第四类「其他婴幼儿谷物辅助食品」——婴幼儿饼干、磨牙棒即属此类（英氏、秋田满满、小鹿蓝蓝、窝小芽、光合星球等主流炭烧棒均为该标准）。<b>若实际执行的是 GB 7100（饼干）或 GB/T 20980，则"婴幼儿"这个命名本身就有合规风险</b>（《食品标识监督管理办法》第八条：无依据不得标称适合未成年人食用），须先解决命名合规，再谈详情页。</li>
+    <li><b>② 卖点为推断，不是事实。</b>你未提供卖点清单，下文 FBE 与逐屏文案基于产品名（核桃 / 牛乳 / 炭烧棒）与婴标要求<b>推断</b>。请逐条核对，与实际配方不符的必须删改——尤其是"强化钙""生牛乳"这类成分陈述。</li>
+    <li><b>③ 适用月龄与核桃仁添加量。</b>这两个数字直接决定分阶屏和定量标示屏能不能落地，且必须与实物标签一致。</li>
+  </ul>
+</div>
+
+<div class="note">
+  <b>品类定位：</b>炭烧棒是<b>磨牙棒形态的婴幼儿谷物辅助食品</b>，卖的不是"好吃"，是"<b>我喂得对</b>"。按 <code>references/categories/infant-food.md</code> 的逻辑，说服顺序是「<b>先拿资格（国标+月龄），再讲内容（原料+工艺）</b>」，与零食完全相反。本方案叠加了本品独有的两个新变量：<b>核桃（坚果）</b>与<b>牛乳</b>。
+</div>
+
+<!-- 一、消费者洞察 -->
+<section>
+  <h2>一、消费者洞察（谁买 · 为什么买 · 担心什么）</h2>
+  <table>
+    <tr><th style="width:22%">维度</th><th>分析</th></tr>
+    <tr><td><b>购买者 / 使用者</b></td><td>购买者＝妈妈（25–35 岁，辅食决策权接近 100%）；使用者＝12–36 月龄幼儿；影响者＝白天带娃的祖辈。<b>本品比普通炭烧棒多一道决策门槛</b>：核桃＋牛乳＝双重致敏原，新手妈妈会犹豫。</td></tr>
+    <tr><td><b>购买原因 TOP3</b></td><td>① 宝宝出牙期牙龈痒，需要能啃一会儿的东西 ② 想让宝宝吃到核桃这种"公认有营养"的食材 ③ 手指条造型宝宝能自己抓着吃，锻炼抓握、大人能腾出手。</td></tr>
+    <tr><td><b>真正想获得</b></td><td>「<b>我喂得对</b>」——把核桃喂进去了、宝宝自己会抓着吃了、没给错东西。是尽责感，不是口味满足。</td></tr>
+    <tr><td><b>最担心</b></td><td>① <b>核桃整粒噎到</b>（坚果是幼儿气道异物第一元凶） ② <b>过敏</b>（核桃+牛乳双致敏原） ③ <b>太硬崩牙龈、太软没磨牙效果</b> ④ 糖和香精 ⑤ 买错月龄。</td></tr>
+    <tr><td><b>竞品没满足的</b></td><td>详见第二节。核心是：<b>没有一家炭烧棒敢正面处理"坚果"这件事</b>——要么不做核桃，要么做了也不敢讲（怕过敏责任）。而家长最想问的恰恰是"核桃整颗会不会噎到"。</td></tr>
+  </table>
+
+  <h3>一个必须讲清的认知冲突</h3>
+  <p>《中国居民膳食指南（2022）》与喂养指南口径是：<b>6 月龄起应及时引入多样化食物，早期引入易过敏食物（如花生、蛋、鱼）反而有助于建立免疫耐受</b>；但同时对<b>整粒坚果</b>有明确禁令——<b>3 岁以下婴幼儿不应食用尺寸较大的整颗坚果，必须磨成粉或打成糊</b>（坚果颗粒小、光滑、坚硬，极易呛入气道，且吸水膨胀会加重梗阻）。</p>
+  <p>也就是说，家长心里那两句话——"核桃好，要给宝宝吃"和"核桃会噎到，不敢给"——<b>同时成立</b>。本品恰好站在这个冲突的正中间：如果核桃是<b>磨成粉揉进面团</b>的，那它就是消除这个恐惧的答案。这是本案最强的一条叙事线，第四节第 4 屏专门承载。</p>
+</section>
+
+<!-- 二、竞品分析 -->
+<section>
+  <h2>二、竞品分析（京东真实数据 · 5 个对标）</h2>
+  <p style="font-size:13.5px;color:var(--muted)">按 <code>competitor-research.md</code> SOP 抓取。<b>链接说明：</b>以下为京东官方推广跳转链接（<code>union-click.jd.com</code>），可点开并指向真实在售商品页；本轮多次尝试未取得 <code>item.jd.com</code> 商品详情页直链（京东需登录），<b>已如实标注，未编造 URL</b>。正式发布前建议替换为 <code>item.jd.com</code> 直链。</p>
+  <table>
+    <tr><th>品牌 / 产品</th><th>规格 · 标注月龄</th><th>价格</th><th>数据表现</th><th>核心卖点</th><th>商品链接</th></tr>
+    <tr>
+      <td><b>英氏</b><br>婴幼儿炭烧棒饼干 牛奶味</td>
+      <td>108g · <b>6 月+</b></td><td>¥17.9–24.8</td><td>300 万+评论 · 好评 99%</td>
+      <td>特浓高钙牛奶、5 阶分阶、婴标、手指长条造型</td>
+      <td><a href="https://union-click.jd.com/jdc?e=&p=JF8BASsJK1olXQYHUlZeCkMTB18IGloUXQMHXFhZDUwnRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWA2oNE10RWAEdDRsBVXthXilDegUUNWVpThsJTQlxVAQBHAlTUQoyUFheDk8WAm4LK1sUXAcDXVZUAEknB2lmGjUVVANsUl9VDEkSV2ZYHVgWXQMDXG5dCXtBbW8JGloUVAYBV1dtCXsXBWYAGV8SVAUFVF5cOEsfB1_fsvXD0aDW7fSKusknM18LK2slXTYBZAAzCUwRAD0NE1J7AUIDChoeWk95AWoKHlIXVAQyVl9cCkknM19vQwR9P3AFIhVcWilhfW5xZht8IGR0Kh5aVC5lQzBmGTJnFQRRUBo4ABdhQhJ9HlxNbQYyVFxdAHsWMw">京东商品页 ↗</a></td>
+    </tr>
+    <tr>
+      <td><b>小鹿蓝蓝</b><br>婴幼儿炭烧棒磨牙棒饼干 强化钙</td>
+      <td>130g · <b>12 月+</b></td><td>¥9.0–14.8</td><td>400 万+评论 · 好评 99% · 月销 3000+</td>
+      <td>强化钙、手指饼干造型、无添加食盐、罐装防潮</td>
+      <td><a href="https://union-click.jd.com/jdc?e=&p=JF8BAUwJK1olWAUEVVtVD04QBF8IGloUXgMKU1lbC08nRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoWAGoAHFwTXgIdDRsBVUVTXDdWRCdBCF5SMQ4LBEh5AwEIKw5nWGJcFzgpakxhRARhTz5GB3xVJxhRBHsTBWwOH1oUXAUyVF9cCUoeC2YAGWsRW2gDOl5UDSURVz1cGVNBW1EBUAtUD0xHM28JKxl7CFJWFw0ATB_OtfTRus_C-6Db7d-Jg-0nAl8IHVIdXwIFXV1ZAEkSM28AH2vC9KjU2PiJseHAse04K2sWbTYyVG5eOBV5AmgMGQsXX1RsCBpcVg9UBTlmGV4XXA4FXFxtCkoWAW04K2scNWZxNy0uejdHeBd7ez1pGWd1UiYuaE5KWi1SfDt7Xw4CAw0nUj5_BSx7Hg5hH2BGZF5tCEkXC18JKw">京东商品页 ↗</a></td>
+    </tr>
+    <tr>
+      <td><b>秋田满满</b><br>婴幼儿炭烧棒磨牙棒</td>
+      <td>130g · <b>6 月+</b><br><span style="color:var(--muted);font-size:12px">同系列另有 72g / 10月+ / 12月+ 版本</span></td><td>¥13.3</td><td>50 万+评论 · 好评 98%</td>
+      <td>6 月+ 起步、无添加、手指磨牙造型、低价带</td>
+      <td><a href="https://union-click.jd.com/jdc?e=&p=JF8BATAJK1olWAYKU1tcCUgUBV8IGloVXA8HV1tfDUInRzBQRQQlBENHFRxWFlVPRjtUBABAQlRcCEBdCUoXAmYNGF4XWA8dDRsBVXsUeTlPYSQVWGZpCAA9TCp-YGlgWxx1UQoyUFheDk8WAm4LK1sUXAcDXVZUAEknB2lmGjUVVANsXQ0JWElCVmcJTFwVVQZRV25dCXtVbbiCi4yfzdCp4Yjel56doV8JK1sTVA4AUFlUC0wWBWg4G1MRbdGr-ojRrp-uqbi6mWslbQUyZG5dOEgnXQEJHAtBXlRWVDABTEpJRyxbSzUXWAQCVVZYAXsVAm4KGWslbW1FUTclYSlUSiduZjJwNQN-DDcYdSJyXzJyHl9KWGgAMiobQQ8Sfh9fXjJOK0NQKVdtCHsXAW8AK1ol">京东商品页 ↗</a></td>
+    </tr>
+    <tr>
+      <td><b>窝小芽</b><br>婴幼儿牛奶炭烧棒</td>
+      <td>72g · <b>10 月+</b></td><td>¥17.4–20</td><td>5 万+评论 · 好评 99%</td>
+      <td>纽西兰进口乳粉、添加益生元、5 大无添加、高温烘焙非油炸、4 个独立包装</td>
+      <td><a href="https://union-click.jd.com/jdc?e=&p=JF8BAS0JK1olXgUHVV9cAUgUAV8IGlgWXQIAU11dAUkQAF9MRANLAjZbERscSkAJHTdNTwcKBlMdBgABFksWAGwIH1kSXgYLVlleFxJSXzI4bjplKXBnFiU9aTlDfW99XSZ8BQN7NFJROE8RAGkMGloUXjYCVV9cCUIfCmcKK18TMwdsVFdYZkofV2xYSQ9AWQYKXFxZDEknA244WjUVXAQKUVdaAXsWM28OElMXWQELVF1cAUonA2cMK4y889CO8orkopylgV84K1glbTYCZF1tViUWBGsMGF8TDmheEF8DTB1PQgEKHlkUWQYGUW5fCUoVAV84Kw9RVAZZVAk4WxxefG9segFBOlNFK145Th9zWAtSEjUXVAJlDQoCUj58fAp0YRkdDXAyVG5dCksfM244">京东商品页 ↗</a></td>
+    </tr>
+    <tr>
+      <td><b>光合星球</b>（babycare）<br>阳光小麦婴幼儿磨牙棒</td>
+      <td>64g（8g×8）· 6 月+</td><td>—</td><td>详情页信息完整（100 万+评论级）</td>
+      <td>GB 10769、不加白砂糖/盐/香精/色素/麦芽糊精、二价铁、<b>硅胶手持器防掉</b>、40 多次反复压面、TUV 检测</td>
+      <td><span style="color:var(--muted);font-size:12px">链接待补充<br>（信息来自其官方详情页图文）</span></td>
+    </tr>
+  </table>
+
+  <h3>竞品普遍做法（大家都在干什么）</h3>
+  <p>① <b>亮婴标 + 堆"不加"</b>——"婴标 GB 10769""不加白砂糖""不加盐""无添加""5 大无添加"是标配话术；② <b>强化钙/高钙</b>是最高频的营养卖点；③ 硬度话术统一为"硬度适中、不伤牙龈、易化不噎"；④ 造型统一为手指条，主打抓握与自主进食；⑤ 口味扩张（牛奶味、蔬菜味、草莓苹果味、芝麻味）；⑥ 少数做结构创新，如硅胶手持器防掉。</p>
+
+  <h3>我们的差异化机会（4 条，按强度排序）</h3>
+  <table>
+    <tr><th style="width:30%">机会</th><th>为什么这是我们独有的</th></tr>
+    <tr>
+      <td><b>① 把"核桃整粒会噎到"正面讲透</b></td>
+      <td>全行业都在回避坚果的风险话题，而这是家长心中第一大恐惧。我们说的是"核桃磨成粉揉进面里，不是撒上去的颗粒"——<b>用工艺回答安全问题</b>，对手要么没核桃、要么不敢讲。这条几乎无法被抄，因为抄了就得先把工艺改掉。</td>
+    </tr>
+    <tr>
+      <td><b>② 双致敏原主动明示</b></td>
+      <td>核桃（坚果类）＋牛乳（乳及乳制品）在八大类致敏物质里占两类。<b>主动双标注不是劣势，是专业感</b>——敢把最敏感的信息摆在明面上，反向证明配方透明。</td>
+    </tr>
+    <tr>
+      <td><b>③ 弃用"不添加"话术，改正面清单</b></td>
+      <td>竞品的"不加白砂糖/不加盐/无添加"整套话术，在 <code>GB 7718-2025</code> 实施后（2027-03-16）<b>属禁止用语</b>。我们提前改写为"配料表 X 样"+ 糖含量数字，既合规又比"不加"更有信息量。详见第六节。</td>
+    </tr>
+    <tr>
+      <td><b>④ 月龄标注给依据</b></td>
+      <td>竞品月龄标注混乱：同是炭烧棒，英氏标 6 月+，小鹿蓝蓝标 12 月+，秋田满满同系列横跨 6/10/12 月+，英氏另一款标到 24/25 月+。<b>标注混乱本身就是行业痛点</b>，我们给出"几个月吃哪根 + 为什么"的对照表，把模糊变成可查。</td>
+    </tr>
+  </table>
+</section>
+
+<!-- 三、FBE 卖点转换 -->
+<section>
+  <h2>三、FBE 卖点转换（推断卖点，待你核对）</h2>
+  <p style="font-size:13.5px;color:var(--muted)">以下 6 项为<b>基于产品名的推断</b>，非你提供的原始卖点。请逐条确认或替换。</p>
+  <table>
+    <tr><th style="width:16%">卖点</th><th style="width:30%">Feature → Consumer Truth</th><th style="width:30%">Benefit（人话）</th><th>Emotion</th></tr>
+    <tr>
+      <td><b>核桃仁<br>（磨粉）</b></td>
+      <td>含核桃仁，<b>磨成粉</b>加入面团 → 家长想说"核桃有营养"，但怕整粒噎到、怕过敏</td>
+      <td>❌「添加核桃，营养更聪明」<br>✅「核桃磨成粉揉进面里，不是撒的颗粒」</td>
+      <td>敢给、放心</td>
+    </tr>
+    <tr>
+      <td><b>牛乳</b></td>
+      <td>配方含乳粉/生牛乳 → 奶香决定宝宝肯不肯啃第二口；乳也是钙来源</td>
+      <td>❌「牛乳配方，营养升级」<br>✅「奶香是乳粉给的，不是香精」</td>
+      <td>宝宝肯吃、踏实</td>
+    </tr>
+    <tr>
+      <td><b>婴标<br>GB 10769</b></td>
+      <td>执行婴幼儿谷类辅助食品国标 → 家长不懂标准号，但认"有标准才敢喂"</td>
+      <td>❌「婴标品质，值得信赖」<br>✅「按婴幼儿谷类食品国标做的，标准号印在罐上」</td>
+      <td>有资格、专业</td>
+    </tr>
+    <tr>
+      <td><b>硬度耐啃<br>（水分≤10%）</b></td>
+      <td>国标要求磨牙棒水分 ≤10.0%，兼顾硬度与安全 → 家长怕"太硬伤牙龈""太软一咬就碎"</td>
+      <td>❌「硬度适中」<br>✅「能啃十几分钟，泡水才慢慢化」（须实测）</td>
+      <td>有用、不浪费</td>
+    </tr>
+    <tr>
+      <td><b>手指造型<br>独立小包</b></td>
+      <td>长条易抓握、独立包装便携 → 家长要的是"宝宝自己抓着吃，我能腾出手"</td>
+      <td>❌「便携独立装」<br>✅「一手一根正好握，出门揣两包」</td>
+      <td>省事、有成就感</td>
+    </tr>
+    <tr>
+      <td><b>强化钙<br>（若有）</b></td>
+      <td>若配方强化钙 → 家长认"补钙"，但不懂剂量</td>
+      <td>❌「高钙更健康」<br>✅「每 100 克含 X mg 钙」（<b>填实测值</b>）</td>
+      <td>补到了、不焦虑</td>
+    </tr>
+  </table>
+  <div class="note" style="margin-top:12px">
+    <b>转换检查：</b>全部 6 项已过 FBE 五问（Feature / Consumer Truth / Benefit / Emotion / Visual）。其中"强化钙"必须落实测值，否则删除该屏——<b>营养声称（"高钙"）须符合 GB 28050 / GB 13432 的条件，不能凭感觉写"富含"</b>。
+  </div>
+</section>
+
+<!-- 四、逐屏策划 -->
+<section>
+  <h2>四、逐屏策划（弹性框架 · 11 屏）</h2>
+  <p style="font-size:13.5px;color:var(--muted)">屏数算法：6 个卖点 + 5 个铺垫屏（分阶 / 国标 / 配料 / 安全 / 规格行动）＝ 11 屏。<b>主文案 ≤10 字 · 副文案 ≤12 字</b>，均已在括号内标注字数。带绿色编号的为本品差异化关键屏。</p>
+
+  <div class="screen">
+    <span class="no">第 1 屏 · 首屏</span>
+    <h4>产品 + 月龄 + 一句话价值</h4>
+    <div class="copy-line"><span class="copy-main">核桃磨进面里</span><span class="copy-sub">12个月自己抓着啃</span><span class="copy-tag">主 6 字 · 副 9 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>罐体 3/4 角 + 一根炭烧棒斜靠在核桃仁旁（形成"原料→成品"的暗示）；背景暖米白，磨砂质感台面，侧逆光。不掉碎屑的干净感优先于氛围感。</div>
+    <div class="field"><span class="lab">AI Prompt</span>warm cream background, brown baked stick biscuit leaning on a walnut half, soft side light, clean minimal food photography, muted earthy tones, no text</div>
+    <div class="field"><span class="lab">设计理由</span>首屏只讲一件事：<b>核桃被磨进去了</b>。这一句同时消解了"核桃好"和"核桃会噎到"两个念头，是本品最深的那颗钉子。月龄放在副文案，是为了在第一眼就筛掉买错段的人群，减少无效流量与售后。</div>
+  </div>
+
+  <div class="screen key">
+    <span class="no">第 2 屏 · 分阶（辅食独有）</span>
+    <h4>几个月吃哪根</h4>
+    <div class="copy-line"><span class="copy-main">几个月吃哪根</span><span class="copy-sub">看质地和长度</span><span class="copy-tag">主 6 字 · 副 6 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>三档并排对照图：<b>颗粒/质地实拍 + 长度标注（cm）+ 每日建议根数</b>。用分阶色块区分（12M+ 草绿 <code>#9CC49B</code>、18M+ 暖橙 <code>#EBAF7C</code>），每档下方留出"标称月龄 + 依据出处"的位置。</div>
+    <div class="field"><span class="lab">设计理由</span>竞品月龄标注混乱（同为炭烧棒，6月+/10月+/12月+/25月+ 皆有）。<b>混乱就是机会</b>：把"几月吃、吃多长、吃几根"讲成一张可对照的表，等于替妈妈做了决策。这也是辅食品类独有的信任手段——<b>普通的零食详情页没有分阶屏</b>，因为零食不需要按发育阶段选。</div>
+    <div class="field"><span class="lab">⚠ 落地前提</span>月龄必须<b>有依据</b>（《食品标识监督管理办法》第八条：无依据不得标称适合未成年人食用）。建议月龄区间须与实物标签一致，不要为了覆盖更多人群而虚标更低月龄。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 3 屏 · 国标（辅食独有）</span>
+    <h4>有国标才敢喂</h4>
+    <div class="copy-line"><span class="copy-main">有国标才敢喂</span><span class="copy-sub">GB 10769-2025</span><span class="copy-tag">主 6 字 · 副＝标签文字</span></div>
+    <div class="field"><span class="lab">画面描述</span>执行标准号特写（实物罐身拍摄）+ 一行国标要点对照："蜂蜜？没有 / 氢化油脂？没有 / 添加糖？限量内"。用对勾/叉号视觉，像一份自查表，不做花哨包装。</div>
+    <div class="field"><span class="lab">设计理由</span>炭烧棒属 <code>GB 10769</code> 第四类「其他婴幼儿谷物辅助食品」——这是它能被叫"婴幼儿"的<b>唯一资格凭证</b>，也是普通饼干永远拿不到的东西。妈妈不需要读懂标准，只需要看到"有号可查"。<b>信任第一锚点，必须前置。</b></div>
+  </div>
+
+  <div class="screen key">
+    <span class="no">第 4 屏 · 核桃（核心差异化）</span>
+    <h4>核桃是磨成粉的</h4>
+    <div class="copy-line"><span class="copy-main">核桃磨成粉</span><span class="copy-sub">不是整粒坚果</span><span class="copy-tag">主 5 字 · 副 6 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>三步工艺实拍：<b>整颗核桃仁 → 研磨成粉 → 揉进面团</b>。第三张用面团横切面微距，展示核桃粉在面体里均匀分布（区别于"表面撒粒"）。可加一张"整粒 vs 磨粉"的形态对比，克制、不恐吓。</div>
+    <div class="field"><span class="lab">AI Prompt</span>macro shot of walnut kernels ground into fine powder, then folded into beige dough, cross-section showing even distribution, natural daylight, food science documentation style</div>
+    <div class="field"><span class="lab">设计理由</span>这是本案最强的一屏。家长的恐惧点是"<b>整粒</b>坚果会呛入气道"（3 岁以下禁食整粒坚果是明确的安全共识），而不是"核桃"本身。<b>我们的工艺恰好就是答案</b>——但竞品没有一家把它讲出来。注意：画面只呈现"磨粉"这个事实，<b>不得出现"防呛""安全不噎"这类承诺性表述</b>（详见第六节）。</div>
+  </div>
+
+  <div class="screen key">
+    <span class="no">第 5 屏 · 致敏原（安全）</span>
+    <h4>该标的都标出来</h4>
+    <div class="copy-line"><span class="copy-main">核桃和乳都标</span><span class="copy-sub">两类致敏原明示</span><span class="copy-tag">主 6 字 · 副 7 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>罐身致敏提示文字放大实拍（"本品含有坚果及其果仁类制品、乳及乳制品"），旁边用两行小字给出"初次尝试建议"（少量、白天、成人看护、观察反应）。排版要像说明书的严谨感，不要可爱化。</div>
+    <div class="field"><span class="lab">设计理由</span>核桃属"坚果及其果仁类制品"、牛乳属"乳及乳制品"，两者都在 <code>GB 7718-2025</code> 规定的<b>八类强制标示致敏物质</b>之内（2027-03-16 起缺项直接判定标签不合格）。竞品要么没坚果、要么含糊处理。<b>主动双标注在这里是加分项</b>：敢把最敏感的信息摊开，比喊十句"安全"都有效。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 6 屏 · 配料</span>
+    <h4>配料表就几样</h4>
+    <div class="copy-line"><span class="copy-main">配料表六样</span><span class="copy-sub">每100克糖X克</span><span class="copy-tag">主 5 字 · 副＝实测数字</span></div>
+    <div class="field"><span class="lab">画面描述</span>配料表实物放大（字体加粗致敏原），右侧并列营养成分表局部，<b>把"糖"那一行单独圈出来放大</b>。数字必须来自实测报告。</div>
+    <div class="field"><span class="lab">设计理由</span>关键改写：<b>不用"不加白砂糖/无添加"，改用"配料表 X 样"+ 糖含量数字</b>。"不加"是主观表态，"6 样 + X 克"是可核对的事实——信息量更大，且在 GB 7718-2025 下长期安全（"不添加/零添加"已被禁止）。同时，GB 28050-2025 将"糖"列入营养成分表强制标示项，把糖摆在明面上是大势所趋，早做早占位。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 7 屏 · 硬度·易化</span>
+    <h4>啃得住，也化得开</h4>
+    <div class="copy-line"><span class="copy-main">啃十几分钟</span><span class="copy-sub">泡水才慢慢软</span><span class="copy-tag">主 5 字 · 副 6 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>三张连续实拍：① 横切面（紧实、不掉渣）② 温水浸泡 5 分钟状态对比（前后并置）③ 断面对比（无尖锐碎屑）。用数据条标注实测时长。</div>
+    <div class="field"><span class="lab">设计理由</span>"硬度"是磨牙棒的差评重灾区：太硬伤牙龈、太软一咬就碎等于白买。国标 <code>GB 10769-2025</code> 对磨牙棒设了<b>水分 ≤10.0%</b> 的指标来兼顾硬度与安全，这是我们讲"耐啃"的标准依据。<b>浸泡对比图直接对应最大差评点</b>——把用户会抱怨的场景提前演示掉。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 8 屏 · 营养</span>
+    <h4>钙铁强化（若有）</h4>
+    <div class="copy-line"><span class="copy-main">钙铁都强化</span><span class="copy-sub">每100克含Xmg</span><span class="copy-tag">主 5 字 · 副＝实测数字</span></div>
+    <div class="field"><span class="lab">画面描述</span>极简数值卡：仅陈列钙、铁、维生素等实际强化的营养素及含量，配一个简单的"每 100g / 每 100kJ"标示（GB 10769-2025 要求按 100kJ 标示含量）。留白多、数字大、不堆砌。</div>
+    <div class="field"><span class="lab">设计理由</span>辅食营养只做<b>客观陈列</b>。磨牙棒的钙是"锦上添花"而非核心功能，所以这屏权重低于核桃屏与工艺屏——<b>不要把它做成主角</b>。若本品未强化钙，本屏直接删除，不硬凑。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 9 屏 · 进食安全</span>
+    <h4>坐直了再吃</h4>
+    <div class="copy-line"><span class="copy-main">一手一根好抓</span><span class="copy-sub">坐直了再吃</span><span class="copy-tag">主 6 字 · 副 5 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>宝宝坐餐椅、竖直坐姿、手抓炭烧棒的侧拍（避开正脸特写）；叠加四个安全小图标：坐姿进食 / 成人看护 / 不逗引 / 断裂即换。</div>
+    <div class="field"><span class="lab">设计理由</span>条状、块状食品按 <code>GB 10769-2025</code> 须提示吞咽安全，详情页复现这条提示<b>反而强化专业感</b>——就像药品说明书越细越可信。同时"一手一根好抓"回答了抓握需求，安全与卖点合并到一屏，不浪费屏位。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 10 屏 · 规格 / 场景</span>
+    <h4>独立小包防潮</h4>
+    <div class="copy-line"><span class="copy-main">独立小包防潮</span><span class="copy-sub">出门揣两包</span><span class="copy-tag">主 6 字 · 副 5 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>规格拆解图（罐装/独立小包数量）+ 三个使用场景实拍：餐椅加餐 / 外出妈咪包 / 祖辈白天带娃。场景要真，不要摆拍大笑。</div>
+    <div class="field"><span class="lab">设计理由</span>独立包装解决的是"开罐受潮 = 整罐报废"的实际损失，同时给出"一次一包"的控量暗示。<b>祖辈带娃场景常被忽略</b>——白天实际喂食的人往往不是下单的人，覆盖这个场景能减少"买回来不会被正确使用"的落差。</div>
+  </div>
+
+  <div class="screen">
+    <span class="no">第 11 屏 · 行动</span>
+    <h4>先买一罐试</h4>
+    <div class="copy-line"><span class="copy-main">先买一罐试</span><span class="copy-sub">按月龄囤更省</span><span class="copy-tag">主 5 字 · 副 6 字</span></div>
+    <div class="field"><span class="lab">画面描述</span>单罐 + 组合装并列，标注"一罐约吃 X 天"的用量换算；CTA 按钮视觉明确，不堆价格爆炸贴。</div>
+    <div class="field"><span class="lab">设计理由</span>双致敏原产品的<b>首单门槛天然偏高</b>（家长没试过不敢囤），所以首单必须给一个"低风险的开始"（单罐），复购再引导组合装。辅食会随月龄升级换段，<b>按月龄囤货是提升客单的自然路径</b>，但要放在"先试"之后，不要一上来就推大包装。</div>
+  </div>
+</section>
+
+<!-- 五、视觉方向 -->
+<section>
+  <h2>五、整体视觉方向</h2>
+  <div class="grid2">
+    <div>
+      <h3>配色</h3>
+      <div class="palette">
+        <div class="sw" style="background:#6E462C">深核桃棕</div>
+        <div class="sw" style="background:#A9744F">主色核桃棕</div>
+        <div class="sw" style="background:#F2EDE4;color:#6E462C;text-shadow:none">乳白</div>
+        <div class="sw" style="background:#FBF8F2;color:#6E462C;text-shadow:none">暖米白底</div>
+        <div class="sw" style="background:#9CC49B">12M+ 草绿</div>
+        <div class="sw" style="background:#EBAF7C">18M+ 暖橙</div>
+      </div>
+      <p style="font-size:14px"><b>逻辑：</b>暖米白打底建立"干净、可信"（辅食信任靠证据不靠氛围）；核桃棕取自产品本体，让页面与实物同源；草绿/暖橙是<b>分阶识别色</b>，让妈妈一眼定位宝宝段位——这套分阶用色是辅食独有手段，其他品类用不上。避免大红大紫促销感。</p>
+    </div>
+    <div>
+      <h3>摄影 / 字体 / 调性</h3>
+      <p style="font-size:14px">
+        <b>摄影：</b>自然光侧逆光、平视与微距为主。必拍五类证据图：<b>原料三步（核桃→粉→面团）、横切面、浸泡对比、致敏提示与配料表特写、宝宝坐姿进食</b>。氛围图让位于证据图。<br>
+        <b>字体：</b>阿里巴巴普惠体 / 思源黑体；<b>月龄、含量、mm 数、糖克数一律粗体放大</b>——参数即卖点。<br>
+        <b>调性：</b>安全、可信、有耐心。<br>
+        <b>避免：</b>过度卡通幼稚化（显不专业）、把辅食拍成大人零食、"专家/医生推荐"式背书、用宝宝萌照替代实质信息、把"补脑"做成主题。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- 六、广告法合规 -->
+<section>
+  <div class="warn-box">
+    <h3>⚠ 六、合规红线（本品专属 · 必读）</h3>
+    <ul>
+      <li><b>1. 绝对不能提"补脑 / 益智 / 聪明 / 促进大脑发育 / 增强记忆"。</b>核桃是最容易被往这个方向写的原料。<code>GB 10769-2025</code> 标签条款明确禁止标注"益智""增高"等宣传用语；且非保健食品不得声称保健功能（《食品标识监督管理办法》第七条第二款）。<b>核桃只能做客观原料陈述，不能做功能关联。</b>这是本案最高风险点。</li>
+      <li><b>2. 停用"不添加 / 零添加 / 不使用 / 不加白砂糖 / 不加盐"。</b><code>GB 7718-2025</code>（2027-03-16 实施，旧版同步废止）明确禁止上述用语对配料作特别强调；仅当该成分含量为 0 时，方可依法使用"无""不含"等定量声称，<b>并须有检验材料支撑</b>。→ 改写为正面清单（"配料表 X 样"）与定量标示（"糖 X g/100g"）。<b>竞品目前普遍在用已属违规的话术，我们不要跟进。</b></li>
+      <li><b>3. 双致敏原必须标。</b>核桃（坚果及其果仁类制品）+ 牛乳（乳及乳制品）均在八类强制标示致敏物质内，须在配料表中加粗/下划线强调，或在配料表临近位置集中提示。<b>2027-03-16 起缺项直接判定标签不合格。</b></li>
+      <li><b>4. 不得做安全承诺。</b>可陈述"核桃经研磨成粉"这一工艺事实，<b>不得写"防呛""绝不噎到""安全无忧"</b>——婴幼儿进食安全无法由厂商担保。吞咽提示要如实呈现，不能反向包装成卖点承诺。</li>
+      <li><b>5. 不得涉及疾病预防 / 治疗 / 保健功能。</b>禁止"预防贫血""改善便秘""助消化""增强抵抗力""提高免疫力"等。</li>
+      <li><b>6. 营养声称须有依据。</b>"高钙""富含铁"等须符合 GB 28050 / GB 13432 的声称条件并标示含量；无实测数据就不要写。营养成分表建议同步按 <code>GB 28050-2025</code> 的"1+6"（含糖、饱和脂肪）准备。</li>
+      <li><b>7. 强调核桃仁须标添加量。</b>产品名中出现"核桃"，按 <code>GB 7718-2025</code> 定量标示要求，应标注核桃仁的添加量或含量（如"核桃仁添加量 ≥X%"）。</li>
+      <li><b>8. 禁用绝对化用语与虚假背书。</b>不用"最 / 第一 / 100% / 唯一 / 冠军"；不得以医疗机构、专家、医生名义或形象作证明；"销量/口碑"类表述须有第三方依据。</li>
+      <li><b>9. 不得暗示替代母乳或配方奶。</b>辅食是补充，不能写"可以代替奶粉"。</li>
+      <li><b>10. 月龄标注须有依据。</b>"婴幼儿""适合未成年人食用"的标称必须有法律法规或食品安全国家标准依据（《食品标识监督管理办法》第八条），月龄区间须与实物标签一致。</li>
+    </ul>
+    <h3 style="margin-top:14px">上线前必查清单</h3>
+    <ul>
+      <li>☐ 执行标准号与实物一致？是否为现行有效版本（GB 10769-2025，2026-03-16 实施）？</li>
+      <li>☐ 全页是否出现"益智 / 补脑 / 增强免疫力 / 预防 XX"等功效或疾病表述？</li>
+      <li>☐ 是否残留"不添加 / 零添加 / 不加白砂糖"等已被禁止的用语？</li>
+      <li>☐ 核桃（坚果）、牛乳（乳制品）两类致敏原是否都已标示？</li>
+      <li>☐ 核桃仁添加量、糖含量、钙铁含量是否都有实测数据并在页面标明？</li>
+      <li>☐ 是否出现"防呛 / 绝对安全"等安全承诺？吞咽提示是否如实呈现？</li>
+      <li>☐ 月龄标注是否有依据、是否与标签一致？</li>
+      <li>☐ 是否有绝对化用语、专家背书、贬低竞品？</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 七、待补充 -->
+<section>
+  <h2>七、上线前需你补充 / 核实的清单</h2>
+  <table>
+    <tr><th style="width:34%">项目</th><th>为什么必须补</th></tr>
+    <tr><td><b>① 包装上的执行标准号</b></td><td>决定"婴幼儿"这个名字是否合法、整页文案边界在哪里。这是辅食策划的<b>第一前置项</b>，缺了它所有文案都是悬空的。</td></tr>
+    <tr><td><b>② 实际卖点清单</b></td><td>本方案 6 项卖点为推断。若实际含益生元、A2 乳源、有机认证等，需替换；若未强化钙，第 8 屏删除。</td></tr>
+    <tr><td><b>③ 适用月龄及依据</b></td><td>第 2 屏分阶表的核心数据，必须与实物标签一致。</td></tr>
+    <tr><td><b>④ 核桃仁添加量</b></td><td>GB 7718-2025 定量标示要求；也是第 4 屏最有说服力的数字。</td></tr>
+    <tr><td><b>⑤ 实测数据</b></td><td>糖含量、钙/铁含量、硬度（啃咬时长）、浸泡软化时间——第 6、7、8 屏的数字全部依赖它。</td></tr>
+    <tr><td><b>⑥ 检测报告</b></td><td>建议覆盖<b>黄曲霉毒素 B1</b>（坚果与谷物的重点风险项，GB 2761 限量）、铅镉等重金属（GB 2762）、致病菌（GB 29921）。</td></tr>
+    <tr><td><b>⑦ 竞品直链替换</b></td><td>当前为京东官方推广跳转链接，建议替换为 <code>item.jd.com</code> 详情页直链。</td></tr>
+    <tr><td><b>⑧ 品牌名 / 规格 / 价格</b></td><td>本案未指定品牌，第 10、11 屏的规格与用量换算需按实物填写。</td></tr>
+  </table>
+</section>
+
+<div class="footer">
+  本方案由「电商详情页策划 Skill」生成 · 品类：婴幼儿辅食（GB 10769 其他婴幼儿谷物辅助食品）· 卖点为推断待核 · 仅作前期策划，非成品页面<br>
+  所有标准号、法规条款与检验数据须在上线前以实物标签及现行有效版本为准复核
+</div>
+
+</div>
+</body>
+</html>
