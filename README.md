@@ -3,7 +3,7 @@
 > 不是 AI 自动出图工具。是一个帮设计师"想清楚再动手"的前期策划引擎。
 
 [![Skill Type](https://img.shields.io/badge/type-WorkBuddy%20Skill-1A6B8A)](https://github.com/Banye0517/ecommerce-detail-page-skill)
-[![Version](https://img.shields.io/badge/version-v1.2.0-27AE60)](https://github.com/Banye0517/ecommerce-detail-page-skill/releases)
+[![Version](https://img.shields.io/badge/version-v1.3.0-27AE60)](https://github.com/Banye0517/ecommerce-detail-page-skill/releases)
 [![Platform](https://img.shields.io/badge/platform-淘宝%20|%20天猫%20|%20京东%20|%20拼多多-e03e2d)](https://github.com/Banye0517/ecommerce-detail-page-skill)
 [![Phase](https://img.shields.io/badge/品类-零食🍒%20|%20洗护🧴%20|%20日用品🪣%20|%20小家电📷%20|%20乳制品🥛%20|%20辅食🍚%20|%20营养品💊-orange)](https://github.com/Banye0517/ecommerce-detail-page-skill)
 
@@ -23,8 +23,9 @@
 
 ## 版本状态
 
-- **v1.2.0（已发布，已打 tag）** — 相较 v1.0 完成多品类扩展：洗护 / 日用品 / 纸品 / 小家电
-- **v1.2.0 之后新增（待发布 v1.3.0）** — 乳制品 🥛、婴幼儿辅食 🍚、营养品 💊 三个品类画像
+- **v1.3.0（已发布）** — 新增乳制品 🥛、婴幼儿辅食 🍚、营养品 💊 三个品类画像，专属画像由 4 个增至 6 个；补首个辅食实案例；按 GB 7718-2025 修正全品类标签文案建议
+- **v1.2.0** — 相较 v1.0 完成多品类扩展：洗护 / 日用品 / 纸品 / 小家电
+- **v1.0** — 零食品类通用框架
 
 ## 支持的品类
 
